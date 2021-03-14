@@ -51,11 +51,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello {},My Name is Subaru
-I AM A GROUP MANAGING BOT FROM HEAVEN.
+Hello {},My Name is Monkey d.Luffy 
+
+I AM AN ANIME THEMED GROUP MANAGING BOT FROM ONE PIECE.
+
 I will help you manage your group.
+
 TO KNOW MY COMMANDS CLICK /help.
-"""
+
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
@@ -77,7 +80,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/eea2e9b3a16d982e04cb5.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/51f08b692cc5ce23da681.jpg"
 
 DONATE_STRING = """donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
@@ -178,17 +181,17 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(                   
                           [[
                               InlineKeyboardButton(
-                              text="🔥Add Subaru To Your Group🔥",
+                              text="🔥Add Monkey d.Luffy To Your Group🔥",
                               url="t.me/{}?startgroup=true".format(
                                   context.bot.username))
                           ], 
                           [
                               InlineKeyboardButton(
                               text="🍁Support Group🍁",
-                              url=f"https://t.me/Subaru_Akehoshi_botsupport"),
+                              url=f"https://t.me/luffy_support"),
                               InlineKeyboardButton(
                               text="✨Updates Channel✨",
-                              url="https://t.me/subaru_support")
+                              url="https://t.me/luffy_updates")
                           ]])) 
     else:
         update.effective_message.reply_text(
