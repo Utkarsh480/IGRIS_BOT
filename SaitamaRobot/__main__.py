@@ -51,7 +51,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello {},My Name is Monkey d.Luffy 
+Hello *{}*,My Name is Monkey d.Luffy 
 
 I AM AN ANIME THEMED GROUP MANAGING BOT FROM ONE PIECE.
 
